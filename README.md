@@ -7,7 +7,7 @@ Consegna
 
 # MILESTONE 1
 
--Create un nuovo context chiamato BudgetContext
+Create un nuovo context chiamato BudgetContext
 
 - Deve contenere uno stato budgetMode di tipo booleano (true/false)
 - Deve fornire anche la funzione per modificarlo (setBudgetMode)
