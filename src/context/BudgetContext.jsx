@@ -8,7 +8,8 @@ const BudgetProvider = ({children}) =>{
 
     return (<BudgetContext.Provider
         value={{
-          
+          budgetMode,
+          setBudgetMode
         }}
     >
         {children}
