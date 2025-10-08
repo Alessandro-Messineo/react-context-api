@@ -1,0 +1,132 @@
+/* stile generale */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* stile navbar */
+nav {
+  background-color: #007BFF;
+  padding: 15px;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+
+}
+
+a.active {
+  color: white;
+}
+
+/* stile background */
+.bg-main,
+.bg-header {
+  background-color: white;
+  padding-top: 20px;
+}
+
+/* stile generale home e chi siamo */
+.page {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 30px;
+  font-size: 40px;
+}
+
+.title-products {
+  text-align: center;
+}
+
+/* stile card */
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.products-card {
+  flex: 0 0 23%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.products-image {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+  padding: 10px;
+}
+
+.products-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.products-info {
+  padding: 15px;
+}
+
+.products-info h2 {
+  font-size: 16px;
+  margin: 0 0 20px;
+}
+
+.products-info .info {
+  font-size: 18px;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+/* sile pagina error */
+.error {
+  text-align: center;
+
+  h1 {
+    font-size: 100px;
+    color: red;
+    margin-top: 50px;
+  }
+}
+
+/* stile dettagli prodotti */
+.products-detail-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 40px auto;
+  cursor: pointer;
+  width: 20%;
+}
+
+.return-products {
+  text-align: center;
+  font-size: 25px;
+
+  p {
+    color: #007BFF;
+  }
+
+}
