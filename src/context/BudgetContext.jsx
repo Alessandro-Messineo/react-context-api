@@ -1,15 +1,30 @@
-import { createContext, useState, useContext  } from 'react';
+import { createContext, useState,useEffect, useContext  } from 'react';
 
 const BudgetContext = createContext();
 
 const BudgetProvider = ({children}) =>{
 
     const [ budgetMode, setBudgetMode ] = useState(false);
+    const [products, setProducts] = useState([]);
+
+    function fetchProducts() {
+        // eslint-disable-next-line no-undef
+        axios.get("https://fakestoreapi.com/products")
+            .then((res) => setProducts(res.data))
+            .catch(error => console.log(error)
+            )
+    }
+
+    useEffect(() => {
+        fetchProducts()
+    }, [])
+    
 
     return (<BudgetContext.Provider
         value={{
           budgetMode,
-          setBudgetMode
+          setBudgetMode,
+          products
         }}
     >
         {children}
@@ -22,4 +37,5 @@ const useBudgetMode = () => {
     return context;
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export  { BudgetProvider, useBudgetMode };

@@ -12,7 +12,7 @@ export default function MainNavBar() {
     const { budgetMode, setBudgetMode } = useBudgetMode();
 
     const toggleBudgetMode = () => {
-        setBudgetMode(prev => !prev);
+        setBudgetMode(!budgetMode);
     };
 
     return (

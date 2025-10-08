@@ -8,6 +8,7 @@ export default function ProductsDetailPage() {
     const navigate = useNavigate();
 
     useEffect(() => {
+        // eslint-disable-next-line no-undef
         axios.get(`https://fakestoreapi.com/products/${id}`)
             .then((res) =>
                 // {
